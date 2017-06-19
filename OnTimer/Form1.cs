@@ -21,14 +21,26 @@ namespace OnTimer
         {
             txtStartedAt.Text = DateTime.Now.ToString();
 
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            //Label1.Text = ("Resolution: " + screenWidth + "x" + screenHeight);
+
             try
             {
+                if(!Directory.Exists(@"C:\AkvaData"))
+                {
+                    Directory.CreateDirectory(@"C:\AkvaData");
+                }
+
                 File.AppendAllText(@"C:\AkvaData\OnTimer.txt","Started @ " + DateTime.Now.ToString() + Environment.NewLine);
             }
             catch (Exception ex)
             {
                 WriteLog(ex);
             }
+
+            Left = (screenWidth - Width) - 5;
+            Top = (screenHeight - Height) - 35;
         }
 
         private void timer1_Tick(object sender, EventArgs e)

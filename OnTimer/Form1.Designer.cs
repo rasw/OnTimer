@@ -47,11 +47,11 @@
             // 
             // txtStartedAt
             // 
-            this.txtStartedAt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStartedAt.Location = new System.Drawing.Point(136, 9);
+            this.txtStartedAt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStartedAt.Location = new System.Drawing.Point(52, 6);
             this.txtStartedAt.Name = "txtStartedAt";
             this.txtStartedAt.ReadOnly = true;
-            this.txtStartedAt.Size = new System.Drawing.Size(255, 29);
+            this.txtStartedAt.Size = new System.Drawing.Size(149, 21);
             this.txtStartedAt.TabIndex = 0;
             this.txtStartedAt.TabStop = false;
             this.txtStartedAt.Text = "- - - -";
@@ -60,30 +60,32 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(59, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 24);
+            this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Started:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(66, 44);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(10, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 24);
+            this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Hours:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtCounter
             // 
-            this.txtCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCounter.Location = new System.Drawing.Point(136, 44);
+            this.txtCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCounter.Location = new System.Drawing.Point(52, 30);
             this.txtCounter.Name = "txtCounter";
             this.txtCounter.ReadOnly = true;
-            this.txtCounter.Size = new System.Drawing.Size(255, 29);
+            this.txtCounter.Size = new System.Drawing.Size(149, 21);
             this.txtCounter.TabIndex = 2;
             this.txtCounter.TabStop = false;
             this.txtCounter.Text = "-";
@@ -92,20 +94,21 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 81);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(16, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 24);
+            this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Current Time:";
+            this.label3.Text = "Time:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtCurrentTime
             // 
-            this.txtCurrentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrentTime.Location = new System.Drawing.Point(136, 79);
+            this.txtCurrentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentTime.Location = new System.Drawing.Point(52, 55);
             this.txtCurrentTime.Name = "txtCurrentTime";
             this.txtCurrentTime.ReadOnly = true;
-            this.txtCurrentTime.Size = new System.Drawing.Size(255, 29);
+            this.txtCurrentTime.Size = new System.Drawing.Size(149, 21);
             this.txtCurrentTime.TabIndex = 4;
             this.txtCurrentTime.TabStop = false;
             this.txtCurrentTime.Text = "- - - -";
@@ -120,14 +123,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 120);
+            this.ClientSize = new System.Drawing.Size(211, 85);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCurrentTime);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCounter);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtStartedAt);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
