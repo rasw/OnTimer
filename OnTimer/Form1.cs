@@ -39,8 +39,8 @@ namespace OnTimer
                 WriteLog(ex);
             }
 
-            Left = (screenWidth - Width) - 5;
-            Top = (screenHeight - Height) - 35;
+            Left = (screenWidth - Width) - 25;
+            Top = (screenHeight - Height) - 70;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -71,11 +71,11 @@ namespace OnTimer
                     }
                 }
 
-                txtCounter.Text = "h:" + hours.ToString() + " m:" + minutes.ToString() + " s:" + seconds.ToString();
+                txtCounter.Text = hours.ToString() + "h, " + minutes.ToString() + "m, " + seconds.ToString() + "s";
             }
             catch 
             {
-                throw new System.Exception("Timer application screwed up big time.");
+               // throw new System.Exception("Timer application screwed up big time.");
             }
         }
 
@@ -105,6 +105,7 @@ namespace OnTimer
             Refresh();
             tmrOpacity.Stop();
             tmrOpacity.Enabled = false;
+            FormBorderStyle = FormBorderStyle.None;
             Application.DoEvents();
         }
 
@@ -127,10 +128,16 @@ namespace OnTimer
 
         private void Form1_MouseEnter(object sender, EventArgs e)
         {
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Opacity = 1;
             tmrOpacity.Stop();
             tmrOpacity.Start();
             Refresh();
+        }
+
+        private void Form1_MouseLeave(object sender, EventArgs e)
+        {
+            
         }
     }
 }
